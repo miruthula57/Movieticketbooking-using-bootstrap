@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;   
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+}
+
+.btn:hover{
+   background-color: gray;
+}
+.img:hover{
+    transform: scale(1.1);
+}
+body{
+    background-color: rgb(239, 224, 224);
+}
+.img1:hover{
+    transform: scale(1.1);
+}
+
+.img3:hover{
+    transform: scale(1.1);
+}
+.card1-container{
+    position: relative;
+    width: 18rem;
+    perspective: 200rem;
+    height: 421px;
+}
+.card1-container:hover .card1-front{
+    transform: rotateY(180deg);
+}
+.card1-container:hover .card1-back{
+    transform: rotateY(0deg);
+}
+.card1-back{
+    transform: rotateY(180deg);
+}
+.card1{
+    transition: all 0.5s;
+    position:absolute ;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.card1-back .card1-body{
+    position: relative;
+}
+
+.card3-container{
+    position: relative;
+    width: 18rem;
+    perspective: 200rem;
+    height: 421px;
+}
+.card3-container:hover .card3-front{
+    transform: rotateY(180deg);
+}
+.card3-container:hover .card3-back{
+    transform: rotateY(0deg);
+}
+.card3-back{
+    transform: rotateY(180deg);
+}
+.card3{
+    transition: all 0.5s;
+    position:absolute ;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.card3-back .card3-body{
+    position: relative;
+}
+
+.underline {
+    width: 33%;
+    height: 5px;
+    background: #767676;
+   
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    overflow: hidden;
+    
+    margin-left: 60px;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: blue;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+.carousel-item{
+    height: 100vh;
+   min-height: 300px;
+    background: no-repeat center center scroll;
+ -webkit-background-size:cover;
+    background-size: cover;
+}
+.carousel-caption{
+    bottom:220px;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 15px;
+    line-height: 1.9;
+}
+.carousel-caption a{
+    text-transform: uppercase;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.w-100{
+    height: 100vh;
+}
+.imgg:hover{
+    transform: scale(1.1);
+}
+
+
+.img1{
+    object-fit: contain;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.col1{
+    background-image: url('https://i.pinimg.com/736x/07/80/47/078047484e666edfcaee2465a062d256.jpg');
+    background-size: cover;
+    background-repeat: none;
+}
+
+.col2{
+    background-image: url('https://us.123rf.com/450wm/simplewitz/simplewitz1709/simplewitz170900011/85636470-pop-corn-in-bucket-on-black-background.jpg?ver=6');
+    background-size: cover;
+    background-repeat: none;
+}
+.col3{
+    background-image: url('https://videohive.img.customer.envatousercontent.com/files/b7afe16d-0ed8-4f11-ab18-d4f478f18665/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=6738b3e2b9cec710c5df1e2911a579b6');
+    background-size: cover;
+    background-repeat: none;
+}
+.hovtxt{
+    background: #00000009;
+    opacity: 0;
+    transition-duration: 1.2s;
+    transition-timing-function: ease-in-out;
+    height: 300px;
+
+}
+.hovtxt:hover{
+    opacity: 1;
+}
+.dropdown-menu:hover{
+    background: #029bd5;
+}
+
+@media only screen and (max-width:1500px){
+    .carousel-caption{
+        padding-bottom: 8%;
+    }
+}
+@media only screen and (max-width:1199px){
+    .carousel-caption h5{
+        font-size: 32px;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:991px){
+    .carousel-caption p{
+        display: none;
+    }
+}
+@media only screen and (max-width:767px){
+    .carousel-caption h5{
+        font-size: 24px;
+    }
+    .carousel-caption p{
+    padding-bottom: 6%;
+    }  
+}
+@media only screen and (max-width:575px){
+    #myCarousel{
+       display: none;
+    }
+    #events{
+        margin-top: 80px;
+    }
+}
